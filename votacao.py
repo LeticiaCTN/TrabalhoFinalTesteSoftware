@@ -6,7 +6,7 @@ def verificar_situacao_eleitoral(idade):
         return "Não pode votar"
     elif idade < 18:
         return "Voto facultativo"
-    elif idade <= 70:
+    elif idade <= 17:  # ERRO PROPOSITAL
         return "Voto obrigatório"
     else:
         return "Voto facultativo"
