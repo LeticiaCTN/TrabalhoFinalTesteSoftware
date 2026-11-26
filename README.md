@@ -1,5 +1,51 @@
 # TrabalhoFinalTesteSoftware
 
+# Desafio Final – Integração Contínua (CI)
+
+## Testes automatizados de uma função de votação
+
+Projeto desenvolvido para a disciplina de Teste de Software, com o objetivo de aplicar conceitos de testes automatizados e Integração Contínua (CI), utilizando Python, pytest e GitHub Actions.
+
+### Objetivo
+
+Desenvolver uma função que identifica a situação eleitoral de uma pessoa de acordo com sua idade, aplicando testes automatizados para verificar seu funcionamento.
+
+### Regras implementadas
+
+- Menores de 16 anos: não podem votar.
+- Pessoas de 16 e 17 anos: voto facultativo.
+- Pessoas de 18 até 70 anos: voto obrigatório.
+- Pessoas acima de 70 anos: voto facultativo.
+- Idades negativas: idade inválida.
+
+### Tecnologias utilizadas
+
+- Python 3
+- Pytest
+- Git e GitHub
+- GitHub Actions
+
+### Testes automatizados
+
+O projeto possui cinco testes automatizados, contemplando as diferentes situações previstas na função.
+
+Para executar os testes localmente:
+
+```bash
+pip install -r requirements.txt
+pytest -v
+```
+
+### Integração Contínua
+
+O GitHub Actions será utilizado para executar automaticamente os testes a cada envio de código (push) e abertura ou atualização de Pull Requests.
+
+O desafio também contempla a introdução proposital de um erro em uma branch separada, demonstrando a capacidade do CI de identificar falhas nos testes.
+
+### Disciplina
+
+Teste de Software – Desafio Final: Integração Contínua (CI) no GitHub.
+
 # Tema e Objetivo
 Durante o semestre você escreveu testes que rodavam na sua máquina. Neste desafio final, o objetivo é dar o
 próximo passo: fazer os testes rodarem automaticamente no GitHub a cada envio de código. Isso se chama
